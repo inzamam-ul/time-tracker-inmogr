@@ -105,6 +105,7 @@ const TrackerContainer: React.FC = () => {
       </Button>
       <Trackers>
         {loading && <StyledSpinner name="line-scale" color="green" />}
+        {dates.length <= 0 && "No date available"}
         {dates.map((item: any) => (
           <Tracker key={item.id} setLoadData={setLoadData} item={item} />
         ))}
