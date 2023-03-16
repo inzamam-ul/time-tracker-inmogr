@@ -15,6 +15,7 @@ type TrackerProps = {
 
 const TrackerItemContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 15px;

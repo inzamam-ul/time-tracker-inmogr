@@ -65,8 +65,8 @@ const TrackerContainer: React.FC = () => {
     try {
       const newDate = {
         date: new Date().toDateString(),
-        startTime: "",
-        endTime: "",
+        startTime: 0,
+        endTime: 0,
       };
       await addDoc(collection(firestore, "dates"), newDate);
       setLoadData((prev) => !prev);
@@ -97,7 +97,7 @@ const TrackerContainer: React.FC = () => {
   useEffect(() => {
     getDates();
   }, [loadData]);
-
+  console.log(dates);
   return (
     <Container>
       <Button onClick={handleAddNewDate}>

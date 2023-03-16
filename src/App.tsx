@@ -25,7 +25,8 @@ const H3 = styled.h3`
 `;
 
 const Main = styled.main`
-  padding: 0px 220px;
+  margin: 0px auto;
+  width: 80%;
 `;
 
 function App() {
